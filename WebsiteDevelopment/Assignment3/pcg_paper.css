@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Cherish Browne
+   Date:   02-25-2020
+
+   Filename: pcg_paper.css
+   Supporting Files: pcg_front.html, 001-classified.svg, 002-newspaper.svg, 003-travel-guide.svg,
+   address.txt, links1.txt, links2.txt, story1.txt, story2.txt, story3.txt, story4.txt, 
+   becareful.jpg, blake.jpg, cougar.jpg, pcglogo.jpg
+
+*/
+
+/* Grid  */
+
+.header {
+  grid-area: header;
+}
+
+.right {
+  grid-area: right;
+}
+
+.stories {
+  grid-area: stories;
+}
+
+.left {
+  grid-area: left;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  min-width: 640px;
+  max-width: 960px;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template:
+    "header header header header header"
+    "left stories stories stories right"
+    "left stories stories stories right"
+    "footer footer footer footer footer";
+  grid-auto-columns: 1fr;
+  background-color: rgb(145, 80, 145);
+}
+
+.header,
+.right,
+.stories,
+.left,
+.footer {
+  padding: 15px;
+}
+
+/*  background colors */
+
+html {
+  background-color: rgb(209, 191, 164);
+}
+
+body div {
+  background-color: rosybrown;
+}
+
+/*  Header  */
+.header {
+  text-align: center;
+}
+
+.header img {
+  border-radius: 3px;
+  width: 500px;
+}
+
+/*  Nav Links */
+a {
+  text-decoration: none;
+}
+
+.right > nav {
+  display: table;
+  width: 100%;
+}
+
+.right > nav > ul > li a:hover {
+  color: white;
+  position: relative;
+}
+
+.right > nav a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: indigo;
+}
+
+nav li {
+  color: white;
+  font-size: 18px;
+  margin: 20px 0px 2px;
+}
+
+.left > nav {
+  display: table;
+  width: 100%;
+}
+
+.left > nav > ul > li a:hover {
+  color: white;
+  position: relative;
+}
+
+.left > nav a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: indigo;
+}
+
+.nav-title-container {
+  position: relative;
+}
+
+.nav-icon {
+  width: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/* Story Images */
+.story-woman {
+  width: 120px;
+  display: block;
+  float: left;
+}
+
+.story-cougar1 {
+  height: 190px;
+  float: right;
+}
+
+.story-cougar2 {
+  width: 175px;
+  float: right;
+  clear: both;
+}
+
+.footer {
+  text-align: center;
+}

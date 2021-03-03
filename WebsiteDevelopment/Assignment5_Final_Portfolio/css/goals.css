@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* Cherish Browne - W0264160
+    Portfolio Website 
+    Final Project WEBD1000
+    File Name: goals.css */
+
+/* color and settings for text box */
+.text-box {
+  background-color: #0000008c;
+  color: white;
+  border: 3px solid lightpink;
+  border-radius: 4px;
+  padding: 15px;
+  margin: auto;
+  width: 600px;
+  display: block;
+}

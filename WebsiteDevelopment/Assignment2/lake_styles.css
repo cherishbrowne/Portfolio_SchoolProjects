@@ -1,0 +1,170 @@
+﻿@charset "utf-8";
+
+@font-face {
+   font-family: Champagne;
+   src: url(cac_champagne.tff) format('ttf');
+   src: url(cac_champagne.woff) format('woff');
+   
+}
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Cherish Browne W0264160
+   Date:   02/08/2020
+   
+   Filename: lake_styles.css
+
+*/
+/* Setting background and text colors */
+
+html {
+   background-color: rgb(209, 206, 151);
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+   background-color: hsl(279, 29%, 85%);   
+}
+
+header a, #rightcol a {
+   text-decoration: none;
+}
+
+#page-header {
+      font-size: 50pt;
+      margin-top: 25px;
+      margin-bottom: 25px;
+}
+
+/* class for cursive */
+
+.cursive {
+   font-family: Champagne;
+}
+
+h1, h2 {
+   font-weight: normal;
+}
+
+h2 {
+   font-size: 25pt;
+}
+
+
+/* Left Column */
+
+#leftcol {
+   background-color: white;
+   position: relative;
+   z-index: 1;
+}
+
+/* Setting the background image */
+
+#leftcol:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   background-image: url("pexels-photo-1680140.jpeg");
+   background-position: center;
+   background-size: cover;
+   opacity: 0.4;
+}
+
+#leftcol > p {
+   margin-left: 2.5%;
+}
+
+/* Right Column */
+
+#rightcol li {
+   list-style: none;
+}
+
+#rightcol h2 {
+   color: #660066;
+   color: rgba(0, 0, 0, 0.7);
+}
+
+#rightcol blockquote {
+   quotes: "“" "”";
+   font-style: italic;
+   margin: 0;
+   margin-top: 50px;
+   color: rgb(132, 86, 145);
+}
+
+#rightcol blockquote:before {
+   content: open-quote;
+}
+
+#rightcol blockquote:after {
+   content: close-quote;
+}
+
+#rightcol h2 {
+   margin-bottom: 0;
+}
+
+#rightcol ul {
+   margin: 0;
+   padding: 10px;
+}
+
+/* Header Nav */
+
+body > header > nav {
+   background-color: #855e8b;
+}
+
+body > header > nav > ul > li {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+body > header a:visited, body > header a:link {
+   color: whitesmoke;
+}
+
+body > header a:hover, body > header a:active {
+   color: hsl(64,73%,68%);
+}
+
+body > section#leftcol {
+   margin-right: 0;
+}
+
+/* Aside Elements */
+
+aside > h1 {
+   text-align: center;
+}
+
+aside > h2 {
+   font-size: 20px;
+}
+
+aside > p {
+   margin-left: 15px;
+}
+
+#notes { 
+   background-color: #E7AA9D;
+}
+
+#events {
+   background-color: #D9BF81;
+}
+
+footer {
+   background-color: #65626A;
+   color:white;
+   text-align: center;
+}
